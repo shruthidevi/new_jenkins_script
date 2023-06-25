@@ -3,7 +3,7 @@ pipeline {
 
      triggers {
         pollSCM('* * * * *')
-    }  
+    } 
     
     stages {
         stage('stage1_clone') {
@@ -29,6 +29,11 @@ pipeline {
             steps {
                 echo 'test my project'
             }
+        }
+         stage('stage5_test5') {
+            steps {
+                echo 'test my project'
+             }
         }
     }
 }
