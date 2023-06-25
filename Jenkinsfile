@@ -4,7 +4,6 @@ pipeline {
      triggers {
         pollSCM('* * * * *')
     } 
-    
     stages {
         stage('stage1_clone') {
             steps {
